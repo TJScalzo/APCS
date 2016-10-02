@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Car()
+comment1.params=soft\ name
+comment1.target=Car(int,\ java.lang.String)
+comment2.params=price
+comment2.target=Car(double)
+comment3.params=
+comment3.target=double\ getPrice()
+comment4.params=
+comment4.target=int\ getSoftness()
+comment5.params=howMuch
+comment5.target=double\ raiseSoftness(int)
+comment6.params=newName
+comment6.target=void\ rename(java.lang.String)
+comment7.params=priceWanted
+comment7.target=double\ negotiatePrice(double)
+numComments=8
