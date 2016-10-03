@@ -1,10 +1,10 @@
 public class Car
 {
-    // Fields:
+    // Fields
     private double price;
     private int howSoftTheSeatsAre;
     private String lovingPetName;
-    // Constructors:
+    // Constructors
     public Car()
     {
         price = 15000.00001;
@@ -32,7 +32,7 @@ public class Car
             lovingPetName = "Jerreigh";
         }
     }
-    // Methods:
+    // Methods
     public double getPrice()
     {
         return price;
