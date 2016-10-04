@@ -1,16 +1,16 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Dragon()
-comment1.params=whatColor\ whatMorphology\ whatName\ female
-comment1.target=Dragon(java.lang.String,\ java.lang.String,\ java.lang.String,\ boolean)
+comment1.params=whatColor\ whatMorphology\ female\ amountGold
+comment1.target=Dragon(java.lang.String,\ java.lang.String,\ boolean,\ double)
 comment2.params=howmuch
-comment2.target=void\ stealGold(double)
+comment2.target=void\ eatGold(double)
 comment3.params=howmuch
 comment3.target=void\ loseGold(double)
 comment4.params=
-comment4.target=java.lang.String\ askName()
+comment4.target=void\ flyAround()
 comment5.params=
-comment5.target=void\ flyAround()
+comment5.target=java.lang.String\ findColor()
 comment6.params=paintColor
 comment6.target=void\ rollInPaint(java.lang.String)
 numComments=7
