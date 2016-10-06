@@ -43,6 +43,7 @@ public class BankAccount
     }
     public void printInfo()
     {
+        System.out.println("Owner: " + owner);
         System.out.println("Balance: $" + balance);
     }
 }
