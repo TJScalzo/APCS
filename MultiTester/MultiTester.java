@@ -28,20 +28,23 @@ public class MultiTester
         // Employee Stuff
         Employee e1 = new Employee("Jane", "Eyre", 17, "Old Maid", 0.0);
         
-        //Methods that don't show anything in console:
-        e1.getFirst();
-        e1.getLast();
-        e1.getID();
+        // Accessor Methods:
+        System.out.println("First Name: " + e1.getFirst());
+        System.out.println("Last Name: " + e1.getLast());
+        System.out.println("ID: " + e1.getID());
+        System.out.println();
         
-        //Methods that show stuff in console:
+        // Mutator Methods:
         e1.setID("12-345-6789");
         e1.increaseAge();
         e1.giveRaise(0.75);
         e1.printPersonnelReport();
         System.out.println();
+        
         e1.changePosition("Wife", 0.0);
         e1.printPersonnelReport();
         System.out.println();
+        
         e1.fire();
         e1.printPersonnelReport();
     }
