@@ -35,6 +35,7 @@ target2.editor.x=602
 target2.editor.y=22
 target2.height=50
 target2.name=MultiTester
+target2.naviview.expanded=false
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
