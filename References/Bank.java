@@ -112,14 +112,7 @@ public class Bank
     }
     public void printCompanyReport()
     {
-        System.out.println("ALL REPORTS:");
-        System.out.println();
-        account1.printInfo();
-        System.out.println();
-        account2.printInfo();
-        System.out.println();
-        account3.printInfo();
-        System.out.println();
+        this.printAllReports();
         president.printPersonnelReport();
         System.out.println();
         vicePresident.printPersonnelReport();
