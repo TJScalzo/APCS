@@ -52,38 +52,37 @@ public class Bank
         accounts = temp1;
         president = new Employee(pFN, pLN, 35, "President", 1000000000);
         vicePresident = new Employee("I'm", "Rich Too!", 21, "Vice President", 10000000);
-        teller1 = new Employee("John", "Smith", 18, "Teller", 100);
-        teller2 = new Employee("Mary", "Sue", 17, "Teller", 98);
-        teller3 = new Employee("Jerry", "Sumth", 19, "Teller", 101);
+        Employee[] temp2 = {new Employee("John", "Smith", 18, "Teller", 100),new Employee("Mary", "Sue", 17, "Teller", 98),new Employee("Jerry", "Sumth", 19, "Teller", 101)};
+        tellers = temp2;
     }
     // Methods
     public double calcTotalFunds()
     {
-        double totalFunds = account1.getBalance() + account2.getBalance() + account3.getBalance();
+        double totalFunds;
+        for (int i=0;i<accounts.length;i++) {
+            totalFunds = totalFunds + accounts[i].getBalance();
+        }
         return totalFunds;
     }
     public void chargeFees(double feeAmount)
     {
-        account1.withdraw(feeAmount);
-        account2.withdraw(feeAmount);
-        account3.withdraw(feeAmount);
+        for (int i=0;i<accounts.length;i++) {
+            accounts[i].withdraw(feeAmount);
+        }
     }
     public void addInterest()
     {
-        account1.deposit(account1.getBalance()*.05);
-        account2.deposit(account2.getBalance()*.05);
-        account3.deposit(account3.getBalance()*.05);
+        for (int i=0;i<accounts.length;i++) {
+            accounts[i].deposit(accounts[i].getBalance()*.05);
+        }
     }
     public void printAllReports()
     {
         System.out.println("ALL REPORTS:");
-        System.out.println();
-        account1.printInfo();
-        System.out.println();
-        account2.printInfo();
-        System.out.println();
-        account3.printInfo();
-        System.out.println();
+        for (int i=0;i<accounts.length;i++) {
+            System.out.println();
+            accounts[i].printInfo();
+        }
     }
     public void fireBigShots()
     {
