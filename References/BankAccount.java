@@ -41,6 +41,11 @@ public class BankAccount
     {
         balance = balance - howmuch;
     }
+    public void transfer(BankAccount sendingTo, double amount)
+    {
+        this.withdraw(amount);
+        sendingTo.deposit(amount);
+    }
     public void printInfo()
     {
         System.out.println("Owner: " + owner);

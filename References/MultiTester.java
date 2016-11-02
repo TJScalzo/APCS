@@ -25,6 +25,11 @@ public class MultiTester
         b3.printInfo();
         System.out.println();
         
+        b3.transfer(b1, 100);
+        b3.printInfo();
+        b1.printInfo();
+        System.out.println();
+        
         // Employee Stuff
         Employee e1 = new Employee("Jane", "Eyre", 17, "Old Maid", 0.0);
         
