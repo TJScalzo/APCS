@@ -55,10 +55,11 @@ public class Bank
         Employee[] temp2 = {new Employee("John", "Smith", 18, "Teller", 100),new Employee("Mary", "Sue", 17, "Teller", 98),new Employee("Jerry", "Sumth", 19, "Teller", 101)};
         tellers = temp2;
     }
+    
     // Methods
     public double calcTotalFunds()
     {
-        double totalFunds;
+        double totalFunds = 0;
         for (int i=0;i<accounts.length;i++) {
             totalFunds = totalFunds + accounts[i].getBalance();
         }
@@ -96,9 +97,9 @@ public class Bank
     }
     public void giveTellersRaise(double howMuch)
     {
-        teller1.giveRaise(howMuch);
-        teller2.giveRaise(howMuch);
-        teller3.giveRaise(howMuch);
+        for (int i=0;i<tellers.length;i++) {
+            tellers[i].giveRaise(howMuch);
+        }
     }
     public void printCompanyReport()
     {
@@ -106,11 +107,9 @@ public class Bank
         president.printPersonnelReport();
         System.out.println();
         vicePresident.printPersonnelReport();
-        System.out.println();
-        teller1.printPersonnelReport();
-        System.out.println();
-        teller2.printPersonnelReport();
-        System.out.println();
-        teller3.printPersonnelReport();
+        for (int i=0;i<tellers.length;i++) {
+            System.out.println();
+            tellers[i].printPersonnelReport();
+        }
     }
 }
