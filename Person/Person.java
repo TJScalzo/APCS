@@ -94,55 +94,60 @@ public class Person
     }
     public Person createChild(Person partner, String firstName, String birthDate)
     {
-        if (partner.isFemale == this.isFemale) {
-            System.out.println("Sorry, you can't create a child on your own.");
+        Person mother;
+        Person father;
+        Person child = null;
+        if (child != null) {
+            System.out.println("Excuse me, you've already had a child. Leave some room for the rest of us!");
             return null;
         } else {
-            Person mother;
-            Person father;
-            Person child;
-            if (this.isFemale) {
-                mother = this;
-                father = partner;
-            } else {
-                mother = partner;
-                father = this;
-            }
-            if (mother.age < 13) {
-                if (father.age < 12) {
-                    System.out.println("Sorry, you're both way too young to have kids.");
-                    return null;
-                } else if (father.age < 15) {
-                    System.out.println("She's too young to have kids.");
-                    return null;
-                } else {
-                    System.out.println("Geez! Don't be gross!");
-                    return null;
-                }
-            } else if (mother.age < 18) {
-                    System.out.println("Are you sure you're ready?");
-                    System.out.println("Wait a couple more years...");
-                    return null;
-            } else if (mother.age >= 45) {
-                System.out.println("I'm sorry... You can't have kids anymore.");
+            if (partner.isFemale == this.isFemale) {
+                System.out.println("Sorry, you can't create a child on your own.");
                 return null;
             } else {
-                if (father.age < 12) {
-                    System.out.println("He's too young to have kids.");
-                    return null;
-                } else if (father.age < 15) {
-                    System.out.println("Geez! Don't be gross!");
+                if (this.isFemale) {
+                    mother = this;
+                    father = partner;
+                } else {
+                    mother = partner;
+                    father = this;
+                }
+                if (mother.age < 13) {
+                    if (father.age < 12) {
+                        System.out.println("Sorry, you're both way too young to have kids.");
+                        return null;
+                    } else if (father.age < 15) {
+                        System.out.println("She's too young to have kids.");
+                        return null;
+                    } else {
+                        System.out.println("Geez! Don't be gross!");
+                        return null;
+                    }
+                } else if (mother.age < 18) {
+                        System.out.println("Are you sure you're ready?");
+                        System.out.println("Wait a couple more years...");
+                        return null;
+                } else if (mother.age >= 45) {
+                    System.out.println("I'm sorry... You can't have kids anymore.");
                     return null;
                 } else {
-                    child = new Person(firstName, father.lastName, 0, 20, 7.5, mother.IQ, birthDate);
-                    String childNoun;
-                    if (child.isFemale) {
-                        childNoun = "girl";
+                    if (father.age < 12) {
+                        System.out.println("He's too young to have kids.");
+                        return null;
+                    } else if (father.age < 15) {
+                        System.out.println("Geez! Don't be gross!");
+                        return null;
                     } else {
-                        childNoun = "boy";
+                        child = new Person(firstName, father.lastName, 0, 20, 7.5, mother.IQ, birthDate);
+                        String childNoun;
+                        if (child.isFemale) {
+                            childNoun = "girl";
+                        } else {
+                            childNoun = "boy";
+                        }
+                        System.out.println("Congratulations, it's a " + childNoun + "!");
+                        return child;
                     }
-                    System.out.println("Congratulations, it's a " + childNoun + "!");
-                    return child;
                 }
             }
         }
