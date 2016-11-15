@@ -93,6 +93,7 @@ Create TWO boolean variables (i.e isHungry).  Print 2 possible messages based on
 - Create an example of a while loop that runs 0 times.
 
 ### `Fibonacci`
-CHALLENGE : Create an int variable called num.  Use other variables and a while loop to print the Fibonacci sequence for as many terms as num.  http://whatis.techtarget.com/definition/Fibonacci-sequence
-i.e for num = 6  fib number is 5
-Fibonacci sequence - 0 1 1 2 3 5 8 13 21...
+CHALLENGE: Create an int variable called num.  Use other variables and a while loop to print the Fibonacci sequence for as many terms as num. 
+<br>[I'm a reference!](http://whatis.techtarget.com/definition/Fibonacci-sequence)
+<br>i.e for num = 6  fib number is 5
+<br>Fibonacci sequence - 0 1 1 2 3 5 8 13 21...
