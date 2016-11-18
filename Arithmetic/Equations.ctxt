@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ squaringN()
+comment1.params=x1\ y1\ x2\ y2
+comment1.target=double\ distanceBig(double,\ double,\ double,\ double)
+comment2.params=x1\ y1\ x2\ y2
+comment2.target=double\ distance(double,\ double,\ double,\ double)
+numComments=3
