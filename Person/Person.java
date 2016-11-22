@@ -20,7 +20,7 @@ public class Person
         birthDate = "07-31-2000";
         isFemale = (Math.random() > 0.5);
     }
-    public Person(String firstName, String lastName, int age, double height, double weight, int IQ, String birthDate)
+    public Person(String firstName, String lastName, int age, double height, double weight, int IQ, String birthDate, boolean isFemale)
     {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -29,7 +29,7 @@ public class Person
         this.weight = weight;
         this.IQ = IQ; 
         this.birthDate = birthDate;
-        isFemale = (Math.random() > 0.5);
+        this.isFemale = isFemale;
     }
 
         public String getFirstName()
@@ -132,7 +132,8 @@ public class Person
                         System.out.println("Geez! Don't be gross!");
                         return null;
                     } else {
-                        child = new Person(firstName, father.lastName, 0, 20, 7.5, mother.IQ, birthDate);
+                        boolean isFemale = (Math.random() > 0.5);
+                        child = new Person(firstName, father.lastName, 0, 20, 7.5, mother.IQ, birthDate, isFemale);
                         String childNoun;
                         if (child.isFemale) {
                             childNoun = "girl";
