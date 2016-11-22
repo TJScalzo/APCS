@@ -1,3 +1,4 @@
+## Exam Practice 1
 ### `Car`
 
 Create a class to represent a Car. Include fields, a constructor, and methods as follows:
@@ -48,3 +49,10 @@ public class testCar
   }
 }
 ```
+
+## Statics Practice
+### `BankAccount`
+Together in class, we will use the idea of adding a static field to make it so the BankAccount class has a unique consecutive ID number for all account objects created.  We will use the idea of keeping track of the NEXT id to be used. This is all called a serial number and the only way to create it is for there to be something all objects of the same class shared which means a static field!
+
+### `Person`
+For independent practice, Go back to your Person class and use the idea of static to add an unique id number to all person objects.
