@@ -18,10 +18,7 @@ public class Person
         weight = 175.0;
         IQ = 100; 
         birthDate = "07-31-2000";
-        if (Math.random() > 0.5)
-            isFemale = false;
-        else
-            isFemale = true;
+        isFemale = (Math.random() > 0.5);
     }
     public Person(String firstName, String lastName, int age, double height, double weight, int IQ, String birthDate)
     {
@@ -32,10 +29,7 @@ public class Person
         this.weight = weight;
         this.IQ = IQ; 
         this.birthDate = birthDate;
-        if (Math.random() > 0.5)
-            isFemale = false;
-        else
-            isFemale = true;
+        isFemale = (Math.random() > 0.5);
     }
 
         public String getFirstName()
