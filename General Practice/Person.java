@@ -38,60 +38,6 @@ public class Person
         nextNum++;
     }
 
-        public String getFirstName()
-    {
-        return this.firstName;
-    }
-    public String getLastName()
-    {
-        return this.lastName;
-    }
-    public int getAge()
-    {
-        return this.age;
-    }
-    public double getWeight()
-    {
-        return this.weight;
-    }
-    public double getHeight()
-    {
-        return this.height;
-    }
-    public int getIQ()
-    {
-        return this.IQ;
-    }
-    public String getBirthDate()
-    {
-        return this.birthDate;
-    }
-    public boolean isPersonFemale()
-    {
-        return this.isFemale;
-    }
-    public void lernStuf()
-    {
-        this.IQ = this.IQ + 1;
-    }
-    public void sniffMarker(int howLong)
-    {
-        this.IQ = this.IQ - (int)(howLong * 1.02);
-    }
-    public void printPersonalReport()
-    {
-        System.out.println("Name:" + " " + firstName + " " + lastName);
-        System.out.println("Age:" + " " + age);
-        System.out.println("Height:" + " " + height);
-        System.out.println("Weight:" + " " + weight);
-        System.out.println("IQ:" + " " + IQ);
-        System.out.println("Birthdate:" + " " + birthDate);
-        if (!isFemale) {
-            System.out.println("The person is male.");
-        } else {
-            System.out.println("The person is female.");
-        }
-    }
     public Person createChild(Person partner, String firstName, String birthDate)
     {
         Person mother;
