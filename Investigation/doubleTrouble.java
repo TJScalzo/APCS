@@ -11,4 +11,13 @@ public class doubleTrouble
             // I believe the reason for this is the space needed to store decimals is infinite and so when it rounds it adds weird numbers onto the end.
         }
     }
+    
+    // Doubtful Doubles:
+    public boolean testEquality(double d1, double d2)
+    {
+        if (Math.abs(d1 - d2) <= .00000000001)
+            return true;
+        else
+            return false;
+    }
 }
