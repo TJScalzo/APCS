@@ -41,7 +41,7 @@ To help you answer above, answer the following: What is max value you can hold i
 
 
 ### `doubleTrouble`
-**Trouble with the `double`**
+## Trouble with the `double`
 
 1. Create a new class named `doubleTrouble` that only has a main method:
 ```Java
@@ -65,3 +65,20 @@ for (int i = 0; i < 20; i++)
   - Write down your thoughts.
   - Investigate some more if you'd like.
   - See http://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/ for help.
+
+## Doubtful Doubles
+Knowing what you know about doubles and their approximation errors, you should be able to spot a big problem with this method:
+```Java
+public boolean testEquality (double d1, double d2)
+{
+  if(d1 == d2)
+    return true;
+  else
+    return false;
+}
+```
+Comparing doubles should NEVER NEVER EVER be done using `==`
+
+1. Using subtraction, `<>` operators, and `Math.abs()` can you fix the `testEquality` method?
+
+2. Now add a new method to your `BankAccount` class called `compareTo` which compares the current `BankAccount` object to another `BankAccount` object and returns `true` if their balances are equal.
