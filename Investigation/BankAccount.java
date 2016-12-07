@@ -9,16 +9,6 @@ public class BankAccount
         balance = 0.00;
         owner = "Mary Sue";
     }
-    public BankAccount(double b, String o) // Some other constructor
-    {
-        balance = b;
-        owner = o;
-    }
-    public BankAccount(String o)
-    {
-        balance = 0.00;
-        owner = o;
-    }
     public BankAccount(double b)
     {
         balance = b;
@@ -41,10 +31,12 @@ public class BankAccount
     {
         balance = balance - howmuch;
     }
-    public void transfer(BankAccount sendingTo, double amount)
+    public boolean compareTo(BankAccount other)
     {
-        this.withdraw(amount);
-        sendingTo.deposit(amount);
+        if (Math.abs(this.balance - other.balance) <= .00000000000000001)
+            return true;
+        else
+            return false;
     }
     public void printInfo()
     {
