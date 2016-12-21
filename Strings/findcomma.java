@@ -1,4 +1,4 @@
-public class findcomma
+public class findComma
 {
     public static void main(String[] args)
     {
