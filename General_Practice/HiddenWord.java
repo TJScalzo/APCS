@@ -12,14 +12,14 @@ public class HiddenWord {
         if(guess.equals(puzzle)) {
             hint = puzzle;
         } else {
-            for(int i = 0; i < l; ++i) {
+            for(int i = 0; i < l; i++) {
                 if(i==0) {
                     hint = "*";
                 } else {
-                    hint = hint + "*";
+                    hint += "*";
                 }
             } // Made default/blank hint
-            for(int i = 0; i < l; ++i) {
+            for(int i = 0; i < l; i++) {
                 String digit = guess.substring(i, i+1);
                 int index = puzzle.indexOf(digit);
                 if(index == i) {
