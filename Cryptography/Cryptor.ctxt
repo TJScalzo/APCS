@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cryptor()
+comment1.params=key
+comment1.target=Cryptor(Key)
+comment2.params=key
+comment2.target=java.lang.String\ makeCipher(Key)
+comment3.params=message
+comment3.target=Message\ cipher(Message)
+numComments=4

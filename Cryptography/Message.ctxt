@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Message()
+comment1.params=statement\ isCiphered
+comment1.target=Message(java.lang.String,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ returnStatement()
+comment3.params=
+comment3.target=boolean\ returnIsCiphered()
+numComments=4
