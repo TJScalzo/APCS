@@ -8,16 +8,12 @@ public class HiddenWord {
     }
     // Method
     public String getHint(String guess) {
-        String hint = null;
+        String hint = "";
         if(guess.equals(puzzle)) {
             hint = puzzle;
         } else {
             for(int i = 0; i < l; i++) {
-                if(i==0) {
-                    hint = "*";
-                } else {
-                    hint += "*";
-                }
+                hint += "*";
             } // Made default/blank hint
             for(int i = 0; i < l; i++) {
                 String digit = guess.substring(i, i+1);
