@@ -21,7 +21,8 @@ public class Cryptor
         {
             String digit = keyWord.substring(i, i+1);
             int index = temp.indexOf(digit);
-            temp = temp.substring(0, index) + temp.substring(index+1);
+            if(index != -1)
+                temp = temp.substring(0, index) + temp.substring(index+1);
         }
         temp = keyWord + temp; // Add keyword to front of alphabet
         int shift = key.returnShift();
