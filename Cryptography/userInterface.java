@@ -22,17 +22,13 @@ public class userInterface
             boolean isCiphered = false;
             boolean running = true;
             while (running == true) {
-                if(someScanner.nextLine().equals("D") || someScanner.nextLine().equals("d")) { 
+                String letter = someScanner.nextLine();
+                if(letter.equals("D") || letter.equals("d")) { 
                     isCiphered = true;
-                    running = false;
-                    System.out.println(running);
-                } else if(someScanner.nextLine().equals("E") || someScanner.nextLine().equals("e")) {
+                } else if(letter.equals("E") || letter.equals("e")) {
                     isCiphered = false;
-                    running = false;
-                    System.out.println(running);
                 } else {
                     System.out.print("That is not a valid response.");
-                    System.out.println(running);
                 }
             }
 
