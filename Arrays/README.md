@@ -11,7 +11,7 @@
 3. i.e
   - "Only the good die young."
   - "Less is more."
-  - "Necessity if the mother of invention."
+  - "Necessity is the mother of invention."
   - "Taking first step often gets you more than halfway there."
   - "Don't be a lemming!"
 4. Loop through  and  print each element in the array.
