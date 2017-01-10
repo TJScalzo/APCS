@@ -7,7 +7,8 @@ public class userInterface
         String response = "";
         while (!(response.equals("Q") ||  response.equals("q")))
         {
-            System.out.println("You have no Cryptors, let’s create one.");
+            System.out.println("Hello, and thank you for choosing Cryptor's Inc, the only manufacturer of high-quality Cryptors.");
+            System.out.println("Now, let’s create a Cryptor.");
             System.out.println("What is the keyword?");
             String keyword = someScanner.nextLine();
             System.out.println("How many characters should it shift?");
@@ -15,7 +16,7 @@ public class userInterface
             Key key1 = new Key(shift, keyword);
             Cryptor cryptor1 = new Cryptor(key1);
             System.out.println("A Cryptor has been made!");
-            System.out.println("Now you can encrypt and decrypt messages!");
+            System.out.println("Now you can encrypt and decrypt messages.");
             System.out.println();
             System.out.println("Type E to encrypt or D to decrypt:");
         
