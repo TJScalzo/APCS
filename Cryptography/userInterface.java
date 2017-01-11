@@ -13,8 +13,8 @@ public class userInterface
             String keyword = someScanner.nextLine();
             System.out.println("How many characters should it shift?");
             int shift = someScanner.nextInt();
-            Key key1 = new Key(shift, keyword);
-            Cryptor cryptor1 = new Cryptor(key1);
+            Key key = new Key(shift, keyword);
+            Cryptor cryptor = new Cryptor(key);
             System.out.println("A Cryptor has been made!");
             System.out.println("Now you can encrypt and decrypt messages.");
             System.out.println();
@@ -39,11 +39,11 @@ public class userInterface
                 System.out.println("What is the message you would like to encrypt?");
             }
             String statement = someScanner.nextLine();
-            Message message1 = new Message(statement, isCiphered);
+            Message message = new Message(statement, isCiphered);
             System.out.println();
             System.out.println("PROCESSING");
             System.out.println();
-            Message newMessage = cryptor1.cipher(message1);
+            Message newMessage = cryptor.cipher(message);
             String newStatement = newMessage.returnStatement();
             System.out.println("Your new message is: " + newStatement);
             System.out.println("Press Q to quit.");
