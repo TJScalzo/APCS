@@ -16,6 +16,7 @@ public class Cryptor
     private String makeCipher(Key key)
     {
         String keyWord = key.returnkeyWord().replaceAll("(.)(?=.*\\1)", ""); // This is regex and it removes duplicates
+        keyWord = keyWord.replaceAll(" ", ""); // This removes spaces from the key
         String temp = plainAlphabet;
         for(int i = 0; i < keyWord.length(); i++) // Remove letters in key from alphabet
         {
