@@ -56,6 +56,10 @@ public class Robot
     
     private boolean hallIsClear()
     {
-        return false;
+        int numItems = 0;
+        for(int i = 0; i < hall.length - 1; i++) {
+            numItems += hall[i];
+        }
+        return numItems == 0;
     }
 }
