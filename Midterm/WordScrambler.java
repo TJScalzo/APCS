@@ -1,16 +1,17 @@
 public class WordScrambler
 {
     private String[] scrambledWords;
-    private String[] defaultWords = {"word", "grape", "apple", "orange"};
+    private String[] unscrambledWords = {"word", "grape", "apple", "orange"};
     
     public WordScrambler()
     {
-        scrambledWords = mixedWords(defaultWords);
+        scrambledWords = mixedWords(unscrambledWords);
     }
     
     public WordScrambler(String[] wordArr)
     {
-        scrambledWords = mixedWords(wordArr);
+        unscrambledWords = wordArr;
+        scrambledWords = mixedWords(unscrambledWords);
     }
     
     private String recombine(String word1, String word2)
@@ -34,6 +35,19 @@ public class WordScrambler
             newWords[i+1] = word2;
         }
         return newWords;
+    }
+    
+    public void printWords()
+    {
+        System.out.print("Unscrambled:");
+        for(int i = 0; i < unscrambledWords.length - 1; i++) {
+            System.out.print(" " + unscrambledWords[i]);
+        }
+        System.out.println();
+        System.out.print("Scrambled:");
+        for(int i = 0; i < scrambledWords.length - 1; i++) {
+            System.out.print(" " + scrambledWords[i]);
+        }
     }
 }
 
