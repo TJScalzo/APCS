@@ -64,7 +64,7 @@ public class Robot
     private boolean hallIsClear()
     {
         int numItems = 0;
-        for(int i = 0; i < hall.length - 1; i++)
+        for(int i = 0; i < hall.length; i++)
             numItems += hall[i];
         return numItems == 0;
     }
@@ -72,25 +72,30 @@ public class Robot
     private void printHall()
     {
         System.out.println("MOVE " + numMoves);
-        System.out.print("Tiles  ");
-        for(int i = 0; i < hall.length; i++)
-            System.out.print(i + "    ");
-        System.out.println();
-        System.out.print("Items  ");
-        for(int i = 0; i < hall.length; i++)
-            System.out.print(hall[i] + "    ");
-        System.out.println();
-        System.out.print("robot  ");
+        String tiles = "Tiles  ";
+        String divider = "       ";
+        String items = "Items  ";
+        String robot = "robot  ";
         for(int i = 0; i < hall.length; i++) {
+            tiles += i + "    ";
+            String itemSpacing = "     ";
+            int itemLength = String.valueOf(hall[i]).length();
+            itemSpacing = itemSpacing.substring(itemLength);
+            items += hall[i] + itemSpacing;
+            divider += "----";
             if(i == pos) {
                 if(facingRight)
-                    System.out.print(">");
+                    robot += ">";
                 else
-                    System.out.print("<");
+                    robot += "<";
             } else {
-                System.out.print("     ");
+                robot += "     ";
             }
         }
+        System.out.println(tiles);
+        System.out.println(divider);
+        System.out.println(items);
+        System.out.println(robot);
         System.out.println();
         System.out.println();
     }
