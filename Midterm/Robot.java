@@ -24,17 +24,12 @@ public class Robot
     private boolean forwardMoveBlocked()
     {
         int last = hall.length - 1;
-        if(facingRight) {
-            if(pos == last)
-                return true;
-            else
-                return false;
-        } else {
-            if(pos == 0)
-                return true;
-            else
-                return false;
-        }
+        if(facingRight && pos == last)
+            return true;
+        else if(!facingRight && pos == 0)
+            return true;
+        else
+            return false;
     }
 
     private void move()
