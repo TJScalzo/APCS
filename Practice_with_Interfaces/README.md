@@ -1,4 +1,4 @@
-### Interfaces (Challenge 6)
+### Interfaces ([Challenge 6](https://github.com/TJScalzo/pets#challenge-6-interfaces))
 So a Java **interface** is something very different than a class. One way to think about it is that an interface is a **totally abstract class**. In other words, it has no methods that have bodys. Instead, it just lists the methods that would be required by a class. Interfaces typically have no fields and they cannot have constructors because they can NEVER be used to make objects. Instead, their goal is to be a **set of requirements** for classes which **choose to agree to implement** the interface. An interface is kind of like a contract that if you "sign on" by implementing the interface than you MUST include all the methods listed in the interface in your class. Because of this an interface can force to otherwise unrelated classes to both contain the same method.
 
 To see this try the following:
