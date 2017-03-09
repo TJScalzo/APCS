@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=substring
+comment0.target=NotChecker(java.lang.String)
+comment1.params=text
+comment1.target=boolean\ accept(java.lang.String)
+numComments=2
