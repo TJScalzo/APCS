@@ -1,33 +1,23 @@
-
-/**
- * Write a description of class Range here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Range
+public class Range implements NumberGroup
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Range
-     */
-    public Range()
+    private int[] group;
+    private int length;
+    
+    public Range(int min, int max)
     {
-        // initialise instance variables
-        x = 0;
+        length = max - min + 1;
+        group = new int[length];
+        for(int i = 0; i < length; i++) {
+            group[i] = min + i;
+        }
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public boolean contains(int num)
     {
-        // put your code here
-        return x + y;
+        for(int i = 0; i < length; i++) {
+            if(num == group[i])
+                return true;
+        }
+        return false;
     }
 }

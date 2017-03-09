@@ -1,6 +1,7 @@
 public class FibonacciGroup implements NumberGroup
 {
     private int[] group;
+    private int length;
     
     public FibonacciGroup(int length)
     {
@@ -9,6 +10,10 @@ public class FibonacciGroup implements NumberGroup
     
     public boolean contains(int num)
     {
-        //asdf
+        for(int i = 0; i < length; i++) {
+            if(num == group[i])
+                return true;
+        }
+        return false;
     }
 }
