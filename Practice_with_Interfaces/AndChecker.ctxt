@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.params=substring1\ substring2
+comment0.params=checker1\ checker2
 comment0.target=AndChecker(Checker,\ Checker)
 comment1.params=text
 comment1.target=boolean\ accept(java.lang.String)

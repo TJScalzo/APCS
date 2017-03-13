@@ -1,16 +1,16 @@
 public class AndChecker implements Checker
 {
-    private Checker substring1;
-    private Checker substring2;
+    private Checker checker1;
+    private Checker checker2;
     
-    public AndChecker(Checker substring1, Checker substring2)
+    public AndChecker(Checker checker1, Checker checker2)
     {
-        this.substring1 = substring1;
-        this.substring2 = substring2;
+        this.checker1 = checker1;
+        this.checker2 = checker2;
     }
     
     public boolean accept(String text)
     {
-        return substring1.accept(text) && substring2.accept(text);
+        return checker1.accept(text) && checker2.accept(text);
     }
 }
