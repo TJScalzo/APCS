@@ -1,6 +1,7 @@
 #BlueJ class context
-comment0.params=
-comment0.target=ProblemThree()
+comment0.target=ProblemThree
 comment1.params=
-comment1.target=void\ forPrint()
-numComments=2
+comment1.target=ProblemThree()
+comment2.params=
+comment2.target=void\ forPrint()
+numComments=3

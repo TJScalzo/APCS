@@ -1,10 +1,11 @@
 #BlueJ class context
-comment0.params=
-comment0.target=ProblemFour()
-comment1.params=size
-comment1.target=ProblemFour(int)
-comment2.params=
-comment2.target=void\ printAll()
+comment0.target=ProblemFour
+comment1.params=
+comment1.target=ProblemFour()
+comment2.params=size
+comment2.target=ProblemFour(int)
 comment3.params=
-comment3.target=void\ printDiagonals()
-numComments=4
+comment3.target=void\ printAll()
+comment4.params=
+comment4.target=void\ printDiagonals()
+numComments=5
