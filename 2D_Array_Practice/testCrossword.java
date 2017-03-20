@@ -23,17 +23,18 @@ public class testCrossword
     
     public static void printPuzzle()
     {
-        boolean[][] blackSquares = {{true,false,false,true},{false,false,false,false},{true,true,true,false},{false,true,true,true}};
+        boolean[][] blackSquares = {{true,false,false,true,true,true,false,false,false},{false,false,false,false,true,false,false,false,false},{false,false,false,false,false,false,true,true,true},{false,false,true,false,false,false,true,false,false},{true,true,true,false,false,false,false,false,false},{false,false,false,false,true,false,false,false,false},{false,false,false,true,true,true,false,false,true}};
         Crossword crossword = new Crossword(blackSquares);
         Square[][] puzzle = crossword.getPuzzle(); 
         for (int r = 0; r < puzzle.length; r++) {
             for(int c = 0; c < puzzle[0].length; c++) {
                 if (puzzle[r][c].getIsBlack()) {
-                    System.out.print("█");
+                    System.out.print("█ ");
                 } else {
-                    System.out.print(puzzle[r][c].getNum());
+                    System.out.print(puzzle[r][c].getNum() + " ");
                 }
-                System.out.print(" ");
+                if (puzzle[r][c].getNum() < 10)
+                    System.out.print(" ");
             }
             System.out.println();
         }

@@ -24,8 +24,13 @@ public class Crossword
         if (!squareIsBlack) { //Square is white
             if (r == 0 || c == 0)
                 return true;
-            if ((!blackSquares[r-1][c]) || !blackSquares[r][c-1]) //Square to the left or square above are white
+            if ((!blackSquares[r-1][c]) || !blackSquares[r][c-1]) { //Square to the left or square above are white
+                if (blackSquares[r-1][c])
+                    return true;
+                if (blackSquares[r][c-1])
+                    return true;
                 return false;
+            }
             return true;
         } else { //Square is black
             return false;
