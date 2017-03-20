@@ -21,25 +21,13 @@ public class Crossword
     public boolean toBeLabeled(int r, int c, boolean[][] blackSquares)
     {
         boolean squareIsBlack = blackSquares[r][c];
-        /*
-        if (!squareIsBlack && ((r == 0 || !blackSquares[r-1][c]) || (c == 0 || !blackSquares[r][c-1])))
+        if (!squareIsBlack) { //Square is white
+            if (r == 0 || c == 0)
+                return true;
+            if ((!blackSquares[r-1][c]) || !blackSquares[r][c-1]) //Square to the left or square above are white
+                return false;
             return true;
-        else
-            return false;
-        */
-        /* For testing if it ever needs to be done.*/
-        if (!squareIsBlack) {
-            System.out.println("Square is white.");
-            if (r == 0 || !blackSquares[r-1][c]) {
-                System.out.println("Square above is black.");
-                return true;
-            } else if (c == 0 || !blackSquares[r][c-1]) {
-                System.out.println("Square to left is black.");
-                return true;
-            }
-            return false;
-        } else {
-            System.out.println("Square is black.");
+        } else { //Square is black
             return false;
         }
     }

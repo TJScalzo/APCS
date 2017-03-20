@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=testCrossword
-comment1.params=
-comment1.target=void\ main()
+comment1.params=r\ c
+comment1.target=void\ main(int,\ int)
 comment2.params=
 comment2.target=void\ aux()
-numComments=3
+comment3.params=
+comment3.target=void\ printPuzzle()
+numComments=4
