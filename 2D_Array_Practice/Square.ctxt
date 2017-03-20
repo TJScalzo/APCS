@@ -2,4 +2,8 @@
 comment0.target=Square
 comment1.params=isBlack\ num
 comment1.target=Square(boolean,\ int)
-numComments=2
+comment2.params=
+comment2.target=boolean\ getIsBlack()
+comment3.params=
+comment3.target=int\ getNum()
+numComments=4

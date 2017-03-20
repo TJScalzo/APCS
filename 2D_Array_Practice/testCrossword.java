@@ -7,4 +7,18 @@ public class testCrossword
         
         System.out.println(crossword.toBeLabeled(0,0,blackSquares));
     }
+    
+    public static void aux()
+    {
+        boolean[][] blackSquares = {{true,false,false,true},{false,false,true,false},{true,true,true,false},{false,true,true,true}};
+        Crossword crossword = new Crossword(blackSquares);
+        Square[][] puzzle = crossword.getPuzzle();
+        for (int r = 0; r < puzzle.length; r++)
+            for(int c = 0; c < puzzle[0].length; c++) {
+                System.out.print(puzzle[r][c].getIsBlack());
+                System.out.print(" " + puzzle[r][c].getNum());
+                System.out.println();
+            }
+    }
 }
+

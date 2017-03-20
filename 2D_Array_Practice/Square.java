@@ -8,4 +8,14 @@ public class Square
         this.isBlack = isBlack;
         this.num = num;
     }
+    
+    public boolean getIsBlack()
+    {
+        return isBlack;
+    }
+    
+    public int getNum()
+    {
+        return num;
+    }
 }
