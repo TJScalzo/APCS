@@ -11,7 +11,7 @@ public class ProblemTwo
     public void forPrint()
     {
         for (int r = 0; r < array.length; r++) {
-            for(int c = 0; c < array[0].length; c++) {
+            for(int c = 0; c < array[r].length; c++) {
                 System.out.print(array[r][c]);
                 System.out.print(" ");
             }
@@ -21,7 +21,7 @@ public class ProblemTwo
     
     public void forEachPrint()
     {
-        for (String arr[] : array) {
+        for (String[] arr : array) {
             for (String value : arr)
                 System.out.print(value + " ");
             System.out.println();
