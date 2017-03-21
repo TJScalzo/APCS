@@ -20,14 +20,13 @@ public class Crossword
     
     public boolean toBeLabeled(int r, int c, boolean[][] blackSquares)
     {
-        boolean squareIsBlack = blackSquares[r][c];
-        if (!squareIsBlack) { //Square is white
-            if (r == 0 || c == 0)
+        if (!blackSquares[r][c]) { //Square is white
+            if (r == 0 || c == 0) //Square is in top row or left column
                 return true;
             if ((!blackSquares[r-1][c]) || !blackSquares[r][c-1]) { //Square to the left or square above are white
-                if (blackSquares[r-1][c])
+                if (blackSquares[r-1][c]) //Square to left is black
                     return true;
-                if (blackSquares[r][c-1])
+                if (blackSquares[r][c-1]) //Square above is black
                     return true;
                 return false;
             }
