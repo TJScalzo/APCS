@@ -32,7 +32,7 @@ public class ProblemFour
         }
     }
     
-    public void printDiagonals()
+    public void printMajorDiagonals()
     {
         for (int c = 0; c < array[0].length; c++) {
             for(int r = 0; r < array.length; r++) {
@@ -48,6 +48,42 @@ public class ProblemFour
                 System.out.print(numberSpacing);
             }
             System.out.println();
+        }
+    }
+    
+    public void printAllDiagonals()
+    {
+        for (int d = -array.length; d < array.length; d++) {
+            for (int c = 0; c < array[0].length; c++) {
+                for(int r = 0; r < array.length; r++) {
+                    if (r+d == c)
+                        System.out.print(array[r][c]);
+                    else if (array[r][c] < 10) 
+                        System.out.print("-");
+                    else
+                        System.out.print("--");
+                    String numberSpacing = "--"; 
+                    if (array[r][c] >= 10)
+                        numberSpacing = "-";
+                    System.out.print(numberSpacing);
+                }
+                System.out.println();
+            }
+            for (int c = 0; c < array[0].length; c++) {
+                for(int r = 0; r < array.length; r++) {
+                    if (r + c == d || r + c == -d)
+                        System.out.print(array[r][c]);
+                    else if (array[r][c] < 10) 
+                        System.out.print("-");
+                    else
+                        System.out.print("--");
+                    String numberSpacing = "--"; 
+                    if (array[r][c] >= 10)
+                        numberSpacing = "-";
+                    System.out.print(numberSpacing);
+                }
+                System.out.println();
+            }
         }
     }
 }
