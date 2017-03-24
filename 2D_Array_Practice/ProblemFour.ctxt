@@ -9,5 +9,5 @@ comment3.target=void\ printAll()
 comment4.params=
 comment4.target=void\ printMajorDiagonals()
 comment5.params=
-comment5.target=void\ printAllDiagonals()
+comment5.target=void\ printRightDiagonals()
 numComments=6
