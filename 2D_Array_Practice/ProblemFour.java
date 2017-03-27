@@ -57,15 +57,15 @@ public class ProblemFour
         for (int d = -array.length; d < array.length; d++) {
             for (int c = 0; c < array[0].length; c++) {
                 for(int r = 0; r < array.length; r++) {
-                    if (r+d == c && r+d )
+                    if (r+d == c)
                         System.out.print(array[r][c]);
-                    else if (array[r][c] < 10) 
-                        System.out.print("-");
-                    else
-                        System.out.print("--");
-                    String numberSpacing = "--"; 
+                    else if (array[r][c] < 10 && r+d < 1) 
+                        System.out.print(" ");
+                    else if (r+d != 0)
+                        System.out.print("  ");
+                    String numberSpacing = "  "; 
                     if (array[r][c] >= 10)
-                        numberSpacing = "-";
+                        numberSpacing = " ";
                     System.out.print(numberSpacing);
                 }
                 System.out.println();
