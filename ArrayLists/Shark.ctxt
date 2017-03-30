@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Shark
+comment1.params=
+comment1.target=Shark()
+comment2.params=victim
+comment2.target=void\ eat(Fish)
+numComments=3
