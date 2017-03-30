@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Fish
+comment1.params=
+comment1.target=Fish()
+comment2.params=
+comment2.target=void\ swim()
+comment3.params=
+comment3.target=java.lang.String\ getColor()
+comment4.params=c
+comment4.target=void\ setColor(java.lang.String)
+comment5.params=
+comment5.target=int\ getAge()
+comment6.params=a
+comment6.target=void\ setAge(int)
+comment7.params=
+comment7.target=void\ die()
+comment8.params=
+comment8.target=boolean\ getIsAlive()
+numComments=9
