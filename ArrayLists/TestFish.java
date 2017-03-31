@@ -48,11 +48,8 @@ public class TestFish
             f.swim();
         Nemo.swim();
         
-        school.remove(1);
-        school.remove(6);
-        school.remove(9);
-        school.remove(13);
-        school.remove(16);
+        for (int i = 0; i < 5; i++)
+            school.remove(Math.random() * school.size());
         
         System.out.println();
         for (Fish f : school)
