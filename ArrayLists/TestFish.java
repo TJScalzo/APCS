@@ -73,9 +73,8 @@ public class TestFish
         for (int i = 0; i < school.size()-1; i++) {
             if(!school.get(i).getIsAlive()) {
                 theGreatBeyond.add(school.get(i));
-                school.get(i).swim();
                 school.remove(i);
-                i = 0; 
+                i -= 1; 
             }
         }
         
